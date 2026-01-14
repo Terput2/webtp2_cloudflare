@@ -115,10 +115,10 @@ Sidebar heading:  20px 'Outfit', sans-serif
 	--dark-secondary: #033120;
 	--dark-optional: #00194C;
 	--white: #ffffff;
-	--color-primary: #1CB098;
-	--color-secondary: #05d5b3;
-	--color-style-two: #6374ff;
-	--color-style-three: #33bfff;
+	--color-primary: #6374ff;
+	--color-secondary: #33bfff;
+	--color-style-two: #1CB098;
+	--color-style-three: #05d5b3;
 	--color-style-four: #ffe824;
 	--color-style-five: #890c25;
 	--color-style-six: #e0f7fb;
@@ -5251,16 +5251,17 @@ ul.list-style-two li:first-child {
 
 .banner-style-nine-items .thumb {
 	position: absolute;
-	height: 100%;
-	right: 0;
-	bottom: 0;
-	z-index: 1;
+	top:0;
+	width: 100%;
+	max-width: 500px;
+	aspect-ratio: 1/1;
+	margin: auto;
 }
 
 .banner-style-nine-items .thumb::after {
 	position: absolute;
 	left: 50%;
-	bottom: 10%;
+	bottom: -5%;
 	content: "";
 	transform: translateX(-50%);
 	height: 480px;
@@ -5273,7 +5274,7 @@ ul.list-style-two li:first-child {
 .banner-style-nine-items .thumb::before {
 	position: absolute;
 	left: 50%;
-	bottom: 3%;
+	bottom: -15%;
 	content: "";
 	transform: translateX(-50%);
 	height: 600px;
