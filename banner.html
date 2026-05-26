@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="img-promosi/logo-tp2.png">
+  <title>Banner SPMB 2026/2027</title>
+  <style>
+    /* Reset dasar */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+    
+    /* Container banner */
+    .banner-container {
+    
+      max-width: 550px;
+      margin: 0 auto;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      position: relative;
+      text-align: center;
+    }
+    
+    /* Banner background image */
+    .banner-image {
+      width: 100%;
+      aspect-ratio: 400 / 700;
+      margin-bottom: 20px;
+      background-image: url('img-promosi/promosi_jan2026.png'); /* Ganti dengan URL gambar Anda */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    #continue-quiz {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-bottom: 20px;
+      background-color: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    #continue-quiz:hover {
+      background-color: #2980b9;
+      cursor: pointer;
+    }
+
+
+    /* Responsif untuk perangkat mobile */
+    @media (max-width: 768px) {
+    
+      .banner-image {
+        height: 100%;
+      }
+      
+      .banner-content {
+        max-width: 100%;
+      }
+      
+      .banner-title {
+        font-size: 2rem;
+      }
+      
+      .banner-description {
+        font-size: 1.1rem;
+      }
+      
+      .coming-soon {
+        font-size: 1rem;
+        padding: 6px 15px;
+      }
+    }
+
+     @media (max-width: 700px) {
+    
+      .banner-image {
+        aspect-ratio: 2/4;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="banner-container">
+    <div class="banner-image">
+    </div>
+    <a href="https://wa.me/+6281398865871" id="continue-quiz" >Hubungi Kami</a>
+    <a href="index.html" id="continue-quiz" >Halaman Utama</a>
+   </div>
+</body>
+</html>
